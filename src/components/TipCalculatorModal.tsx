@@ -19,6 +19,7 @@ function TipCalculatorModal() {
     splitConstraintsReducer,
     initialSplitConstraints
   );
+  console.log(splitConstraints)
   const tipAmount = (splitConstraints.bill * splitConstraints.tipPercent) / 100;
   const tipAmountPerPerson = tipAmount / splitConstraints.people;
   const perPerson = splitConstraints.bill / splitConstraints.people;

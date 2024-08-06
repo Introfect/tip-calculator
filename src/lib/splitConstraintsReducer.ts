@@ -27,11 +27,12 @@ export default function splitConstraintsReducer(split:splitConstraints,action:{ 
           }
         }
         case "reset":{
-          return{
+          const newConstraints={
             bill:0,
             tipPercent:0,
             people:1
           }
+          return newConstraints
         }
         default:{
             throw new Error("case not defined")

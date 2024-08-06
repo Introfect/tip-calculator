@@ -33,7 +33,7 @@ function ResultScreen({ tipAmount, perPerson, dispatch }: Props) {
       </div>
       <button
       type="button"
-        onClick={() => handleDispatch("tipChange", 0)}
+        onClick={() => handleDispatch("reset", 0)}
         className="w-full mt-4 p-2 bg-teal-200 text-teal-800 rounded-md"
       >
         RESET
