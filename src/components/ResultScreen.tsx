@@ -18,20 +18,21 @@ function ResultScreen({ tipAmount, perPerson, dispatch }: Props) {
       <div>
         <div className="mb-4 flex justify-between">
           <div>
-            <div className="text-sm">Tip Amount</div>
-            <div className="text-xs">/ person</div>
+            <p className="text-sm">Tip Amount</p>
+            <p className="text-xs">/ person</p>
           </div>
-          <div className="text-2xl font-bold">${tipAmount.toFixed(2)}</div>
+          <p className="text-2xl font-bold">${tipAmount.toFixed(2)}</p>
         </div>
         <div className="flex justify-between">
           <div>
-            <div className="text-sm">Total</div>
-            <div className="text-xs">/ person</div>
+            <p className="text-sm">Total</p>
+            <p className="text-xs">/ person</p>
           </div>
-          <div className="text-2xl font-bold">${perPerson.toFixed(2)}</div>
+          <p className="text-2xl font-bold">${perPerson.toFixed(2)}</p>
         </div>
       </div>
       <button
+      type="button"
         onClick={() => handleDispatch("tipChange", 0)}
         className="w-full mt-4 p-2 bg-teal-200 text-teal-800 rounded-md"
       >

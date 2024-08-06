@@ -43,6 +43,7 @@ function InputConstrints({ splitConstraints, dispatch }: Props) {
           </button>
         ))}
         <button
+          type="button"
           onClick={() => setIsModalOpen(true)}
           className="p-2 rounded-md bg-teal-100 text-teal-800"
         >
